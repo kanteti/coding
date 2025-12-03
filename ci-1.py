@@ -45,3 +45,20 @@ animals = [
 ]
 #sorted with calling function that decide the sort order
 print(sorted(animals, key=lambda animal: animal['age'], reverse=True))
+
+#data structures
+import random
+def get_random_word():
+  words = "give me random world from the world".split() 
+  return random.choice(words)
+
+print(get_random_word())
+
+def get_unique_dataset():
+  unique_words = set()
+  for _ in range(1000):
+    unique_words.add(get_random_word())
+  
+  return unique_words
+
+print(get_unique_dataset())
